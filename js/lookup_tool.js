@@ -38,18 +38,18 @@ function addressSearch() {
 
     var show_local   = false;
     var show_county  = false;
-    var show_state   = false;
-    var show_federal = false;
+    var show_state   = true;
+    var show_federal = true;
 
     var results_level_set = [];
     // set levels from checkboxes
     if ($('#show_local_results').is(':checked')) {
-        show_local = true;
-        results_level_set.push('local');
+        // show_local = true;
+        // results_level_set.push('local');
     }
     if ($('#show_county_results').is(':checked')) {
-        show_county = true;
-        results_level_set.push('county');
+        // show_county = true;
+        // results_level_set.push('county');
     }
     if ($('#show_state_results').is(':checked')) {
         show_state = true;
